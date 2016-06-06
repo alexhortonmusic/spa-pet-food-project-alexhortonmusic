@@ -4,7 +4,7 @@
       "name": "Purrina",
       "types": [
         {
-          "type": "kitten",
+          "type": "Kitten",
           "volumes": [
             {
               "name": "20oz",
@@ -21,7 +21,7 @@
           ]
         },
         {
-          "type": "elite",
+          "type": "Elite",
           "volumes": [
             {
               "name": "20oz",
@@ -39,7 +39,7 @@
       "name": "Meow Meal",
       "types": [
         {
-          "type": "kitten",
+          "type": "Kitten",
           "volumes": [
             {
               "name": "24oz",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "type": "adult",
+          "type": "Adult",
           "volumes": [
             {
               "name": "28oz",
