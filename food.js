@@ -11,18 +11,20 @@ function executeCodeWhenDogLoads () {
   console.log("dogFood", dogFood); 
   
   // Food function that prints food info to container
-  // var i += 
+  
   dogFood.dog_brands.forEach(function (foods) {
     dogContainer.innerHTML += `
-      <h2>${foods.name}</h2>
-        <p><b>${foods.types[0].type}</b></p>
-          <p>Bag Size:</p>
-            <p>${foods.types[0].volumes[0].name}: $${foods.types[0].volumes[0].price}</p>
-            <p>${foods.types[0].volumes[1].name}: $${foods.types[0].volumes[1].price}</p>
-        <p><b>${foods.types[1].type}</b></p>
-          <p>Bag Size:</p>
-            <p>${foods.types[1].volumes[0].name}: $${foods.types[0].volumes[0].price}</p>
-            <p>${foods.types[1].volumes[1].name}: $${foods.types[1].volumes[1].price}</p>
+      <div class="dogBox">
+        <h2>${foods.name}</h2>
+          <p><b>${foods.types[0].type}</b></p>
+            <p>Bag Size:</p>
+              <p>${foods.types[0].volumes[0].name}: $${foods.types[0].volumes[0].price}</p>
+              <p>${foods.types[0].volumes[1].name}: $${foods.types[0].volumes[1].price}</p>
+          <p><b>${foods.types[1].type}</b></p>
+            <p>Bag Size:</p>
+              <p>${foods.types[1].volumes[0].name}: $${foods.types[1].volumes[0].price}</p>
+              <p>${foods.types[1].volumes[1].name}: $${foods.types[1].volumes[1].price}</p>
+      </div>
     `;
   });
 };
@@ -32,21 +34,23 @@ function executeCodeWhenCatLoads () {
   console.log("catFood", catFood)
 
   // Food function that prints food info to container
-  // var i += 
   catFood.cat_brands.forEach(function (foods) {
     catContainer.innerHTML += `
-      <h2>${foods.name}</h2>
-        <p><b>${foods.types[0].type}</b></p>
-          <p>Bag Size:</p>
-            <p>${foods.types[0].volumes[0].name}: $${foods.types[0].volumes[0].price}</p>
-            <p>${foods.types[0].volumes[1].name}: $${foods.types[0].volumes[1].price}</p>
-            <p>${foods.types[0].volumes[2].name}: $${foods.types[0].volumes[2].price}</p>
-        <p><b>${foods.types[1].type}</b></p>
-          <p>Bag Size:</p>
-            <p>${foods.types[1].volumes[0].name}: $${foods.types[0].volumes[0].price}</p>
-            <p>${foods.types[1].volumes[1].name}: $${foods.types[1].volumes[1].price}</p>
+      <div class="catBox">
+        <h2>${foods.name}</h2>
+          <h3>For breeds: ${foods.breeds}</h3>
+          <p><b>${foods.types[0].type}</b></p>
+            <p>Bag Size:</p>
+              <p>${foods.types[0].volumes[0].name}: $${foods.types[0].volumes[0].price}</p>
+              <p>${foods.types[0].volumes[1].name}: $${foods.types[0].volumes[1].price}</p>
+          <p><b>${foods.types[1].type}</b></p>
+            <p>Bag Size:</p>
+              <p>${foods.types[1].volumes[0].name}: $${foods.types[1].volumes[0].price}</p>
+              <p>${foods.types[1].volumes[1].name}: $${foods.types[1].volumes[1].price}</p>
+      </div>
     `;
   });
+  
 };
 
 function executeIfFilesFailToLoad () {

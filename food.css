@@ -1,0 +1,70 @@
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+.header {
+	text-align: center;
+}
+
+.container h1 {
+	color: #34495e;
+}
+
+/*-----DOG-------*/
+
+#dogContainer {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.dogBox {
+	width: 40%;
+  background: #E9EAEA;
+}
+
+.dogBox h2 {
+	text-align: center;
+	font-size: 2em;
+	color: #e74c3c;
+}
+
+.dogBox p {
+	text-align: center;
+}
+
+.dogBox p b {
+	font-size: 1.2em;
+}
+
+/*--------CAT------*/
+
+
+#catContainer {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.catBox {
+	width: 40%;
+	background: #E9EAEA;
+}
+
+.catBox h2 {
+	text-align: center;
+	font-size: 2em;
+	color: #2980b9;
+}
+
+.catBox h3 {
+	text-align: center;
+}
+
+.catBox p {
+	text-align: center;
+}
+
+.catBox p b {
+	font-size: 1.2em;
+}
